@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;  
+}
+header .header-icons-container{
+    background-color: #47cfad;
+     
+}
+.body-blogs{
+    background-image: none;
+    background-color: white;
+}
+.blogs-button{
+    
+    background-color: transparent;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    border:solid #47cfac 1px;
+    width:85px;
+    height: 40px;
+  
+}
+.blogs-button:hover{
+    background-color:#47cfac  ;
+    color: white;
+}
+.blogs-news-container{
+    background-color: #e6e9ed;
+    height: 500px;
+    display: grid;
+    grid-template: 1fr/6fr 60fr 30fr 4fr;
+    grid-template-areas: "margen1 new news-info margen2";
+     
+}
+.blogs-main-new{
+    grid-area:new; 
+    justify-self: center;  
+    align-self: center;  
+}
+.blogs-main-new img{
+    max-height:430px;
+    max-width:100%;      
+}
+.blogs-news-info-container{
+    align-self:center;
+    grid-area:news-info;    
+}
+.blogs-news-info-container p{
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+.blogs-posts-container{
+    margin:0 auto;
+    width:82%;
+    display: grid;
+    grid-template: 60px/repeat(3,1fr);
+    grid-template-areas: "titulo titulo titulo";
+    grid-auto-rows:550px;
+    gap: 0 40px;
+}
+.blogs-posts-container h2{
+    grid-area: titulo;  
+    height: 30px;
+    width: 104%;
+    text-align:center;
+    justify-self: center;
+    padding-bottom: 35px;
+    border-bottom: solid 1px #d9dde3;
+    margin-top: 10px;
+}
+.post-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center ;
+
+    
+}
+
+.post-container .blogs-button{
+    align-self: flex-start;
+ 
+}
+.blogs-posts-container img{
+    width: 90%;
+    height: 250px;  
+
+}
+.blogs-posts-container p{
+    text-align: justify;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.blogs-posts-container h3{
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22272d ;
+    border-top:#47cfac solid 35px ;
+    color: white;
+    height: 120px;
+}
+footer p{
+    height: fit-content;
+}

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova&display=swap');
+ 
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    margin:0;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    max-width:100%; 
+    font-family: 'Podkova', serif;
+}
+header a{
+    text-decoration: none;
+    display: inline;
+    color:black;
+}
+header{
+    width: 100%;
+    height: 180px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    background-color: #47cfac;
+     
+}
+
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    justify-self: end;
+    margin-right: 35px;
+    
+}
+header .icons span{
+    font-size: 41px;
+    color: white;
+     
+
+}
+header nav{
+    margin: 0;
+    height: 120px;
+    display: grid;
+    grid-template: 1fr /1fr 1fr;
+    
+}
+
+header nav .nav-logo-container{
+    justify-self: start;
+    margin-left: 30px;
+}
+
+
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+header .profile-link{
+    justify-self: end;
+    margin-right: 30px;
+    display:flex;
+    align-items: center;
+
+}
+
+header nav .profile-link a{
+    font-size: 18px;
+    color: black;
+    text-decoration: underline;
+    align-items: center;    
+
+}
+
+
+
+.section-profile-container{
+    background-color: #e6e9ed;
+    height:fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(520px,1fr));
+     
+     
+}
+.img-container{
+    width: 70%;
+    height:75% ; 
+    justify-self: center;  
+    align-self: center;  
+ 
+}
+
+.img-container img{
+
+    max-height:100%;
+    width:100%;
+    border-radius: 8px;   
+}
+ 
+.profile-container{
+     
+    align-self:center;
+}
+
+
+.profile-container h2{
+    
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 35px;
+
+}
+.profile-container p{
+    text-align: justify;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    
+
+}
+.main-blog .section-img-container img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.main-blog .section-text-container article{
+    margin:0 auto;
+     
+
+}
+
+.main-blog .section-text-container div{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+     gap: 20px;
+     
+
+}
+.main-blog .section-text-container article{
+    width: 90%;
+} 
+.main-blog .section-text-container h1{
+    width: 100%;
+    text-align: center;
+    margin:20px auto;
+    border-bottom: 1px solid #d9dde3;
+    padding:30px 0;
+    font-size: 35px;    
+    
+}
+.main-blog .section-text-container article p{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 20px;
+}
+.main-blog .section-contact-container{
+    background-color: #e6e9ed;
+    height: 180px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top: 30px;
+
+}
+.main-blog .section-contact-container div{
+    display: grid;
+    margin: 0 50px;
+    grid-template-columns: 108px;
+    grid-template-areas:"img a"
+                        "img p";
+}
+.main-blog .section-contact-container div a{
+    width: fit-content;
+    color: black;
+    grid-area: a;
+    align-self: end;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+
+}
+.main-blog .section-contact-container div p{
+    color: black;
+    grid-area: p;
+    margin-top: 10px;
+
+}
+.main-blog .section-contact-container div img{
+    color: black;
+    grid-area: img;
+    height: 60%;
+    margin: auto 0;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22272d ;
+    border-top:#47cfac solid 35px ;
+    color: white;
+    height: 120px;
+}
+
+footer p{
+    height: fit-content;
+}
