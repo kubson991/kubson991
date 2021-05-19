@@ -46,9 +46,8 @@ header nav{
 }
 header nav .profile-link a{
     font-size: 18px;
-    color: white;
-    text-decoration: underline;    
-
+    color: black;
+    text-decoration: underline;  
 }
 nav .nav-logo-container img{
     width: 220px;
@@ -59,10 +58,4 @@ header .profile-link{
     margin-right: 30px;
     display:flex;
     align-items: center;
-}
-header nav .profile-link a{
-    font-size: 18px;
-    color: black;
-    text-decoration: underline;    
-
 }
